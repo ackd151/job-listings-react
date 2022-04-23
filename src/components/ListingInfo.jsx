@@ -1,6 +1,7 @@
 import React from "react";
 
 import BusinessLogo from "./BusinessLogo";
+import ListingFlag from "./ListingFlag";
 import "./ListingInfo.css";
 
 const ListingInfo = ({ listing }) => {
@@ -10,8 +11,10 @@ const ListingInfo = ({ listing }) => {
       <div className='business'>
         <div className='business-header'>
           <span className='business-name'>{listing.company}</span>
-          {listing.new && <span className='tag'>NEW!</span>}
-          {listing.featured && <span className='tag'>FEATURED</span>}
+          {listing.new && <ListingFlag flagTag='new!' flagColor='green' />}
+          {listing.featured && (
+            <ListingFlag flagTag='featured' flagColor='black' />
+          )}
         </div>
         <div className='position'>{listing.position}</div>
         <div className='details'>

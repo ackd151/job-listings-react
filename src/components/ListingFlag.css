@@ -1,0 +1,15 @@
+.tag {
+  margin-left: 1rem;
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-size: 0.8rem;
+  padding: 0.25rem 0.35rem;
+  border-radius: 1rem;
+}
+
+.green {
+  background-color: var(--color-primary-cyan);
+}
+.black {
+  background-color: var(--color-neutral-cyan-very-dark);
+}

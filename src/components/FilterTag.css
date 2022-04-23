@@ -1,0 +1,13 @@
+.filter-tag {
+  padding: 0.4rem;
+  background-color: var(--color-neutral-cyan-filter);
+  color: var(--color-primary-cyan);
+  font-weight: 700;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+}
+.filter-tag:hover {
+  cursor: pointer;
+  color: var(--color-neutral-cyan-bg);
+  background-color: var(--color-primary-cyan);
+}

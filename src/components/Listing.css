@@ -4,10 +4,19 @@
   padding: 1.5rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  border-left: 0.33rem solid transparent;
+  border-radius: 0.33rem;
 }
 
 .featured {
-  border-left: 0.33rem solid var(--color-primary-cyan);
-  border-top-left-radius: 0.33rem;
-  border-bottom-left-radius: 0.33rem;
+  border-color: var(--color-primary-cyan);
+}
+
+.tags {
+  height: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
 }

@@ -17,8 +17,13 @@
 }
 
 .position {
+  color: var(--color-neutral-cyan-very-dark);
   font-size: 1.1rem;
   font-weight: 700;
+}
+.position:hover {
+  color: var(--color-primary-cyan);
+  cursor: pointer;
 }
 
 .details {
