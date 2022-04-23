@@ -1,0 +1,13 @@
+.listing {
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured {
+  border-left: 0.33rem solid var(--color-primary-cyan);
+  border-top-left-radius: 0.33rem;
+  border-bottom-left-radius: 0.33rem;
+}

@@ -1,0 +1,39 @@
+.listing-info {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+
+.business {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.business-name {
+  color: var(--color-primary-cyan);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.position {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.details {
+  color: var(--color-neutral-cyan-dark);
+  display: flex;
+  align-items: center;
+}
+
+.details > *:not(:last-child):after {
+  display: inline-block;
+  border-radius: 50%;
+  content: "";
+  width: 3px;
+  height: 3px;
+  background: var(--color-neutral-cyan-dark);
+  margin: 0.25rem 0.5rem;
+  /* vertical-align: middle; */
+}
