@@ -2,9 +2,9 @@ import React from "react";
 
 import "./FilterTag.css";
 
-const FilterTag = ({ tag }) => {
+const FilterTag = ({ tag, onAddFilter }) => {
   return (
-    <button className='filter-tag' value={tag}>
+    <button className='filter-tag' value={tag} onClick={() => onAddFilter(tag)}>
       {tag}
     </button>
   );

@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Job Listings React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Another [Frontend Mentor](https://www.frontendmentor.io/home) challenge implemented in [React](https://reactjs.org/)
 
-## Available Scripts
+This is my second Frontend Mentor challenge implemented using React.
+The [Job Listings](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt) challenge is listed at intermediate level.
 
-In the project directory, you can run:
+### Motivation
 
-### `npm start`
+As usual, simply for educational purposes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Tools
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+React, NodeJS, HTML, CSS, GH-Pages
 
-### `npm test`
+### Lessons
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-This challenge turned out to be fairly simple. The only hiccup presented itself when batching multiple setState's, as the filter state wasn't yet set when filtering the listing state. I fixed it by nesting the listing state update inside of the filter's. I do not know if this is how it should be done, but it is functional and React isn't complaining.
 
-### `npm run build`
+-I did much better this time with component planning, both for the responsive layout and props, foregoing the useContext hook that provides easy state access. There were several levels of prop drilling for state handlers, but I assume that is unavoidable.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-I am not entirely clear on the intended funcionality of the filtering mechanism, as Frontend Mentor doesn't describe functionality in it's challenge documentation, unless I've simply missed that in each challenge. I briefly considered adding a 'potential filters' component to the page, but figured if that was inended it would've been shown in the design images. At any rate, it now functions as one would deduce from examining the 'active states in the challenge materials (presumably).

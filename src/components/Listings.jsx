@@ -3,13 +3,11 @@ import Listing from "./Listing";
 
 import "./Listings.css";
 
-const Listings = ({ data }) => {
-  console.log(data);
-
+const Listings = ({ data, filtered, onAddFilter }) => {
   return (
-    <main className='listings'>
+    <main className={`listings ${filtered ? "filtered" : ""}`}>
       {data.map((listing) => (
-        <Listing key={listing.id} listing={listing} />
+        <Listing key={listing.id} listing={listing} onAddFilter={onAddFilter} />
       ))}
     </main>
   );

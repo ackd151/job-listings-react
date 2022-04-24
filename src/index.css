@@ -34,9 +34,6 @@ button {
   align-items: center;
 }
 
-.hidden {
-  display: none;
-}
 .shadowed {
   box-shadow: -0 8px 5px hsl(180, 52%, 90%);
 }
