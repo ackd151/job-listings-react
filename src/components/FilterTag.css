@@ -2,9 +2,9 @@
   padding: 0.4rem;
   background-color: var(--color-neutral-cyan-filter);
   color: var(--color-primary-cyan);
-  font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 1rem;
   border-radius: 0.2rem;
+  border: none;
 }
 .filter-tag:hover {
   cursor: pointer;

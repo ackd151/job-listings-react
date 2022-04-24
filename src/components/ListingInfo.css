@@ -1,25 +1,25 @@
 .listing-info {
-  position: relative;
   display: flex;
   gap: 1rem;
 }
 
 .business {
+  /* font-weight: 700; */
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .business-name {
   color: var(--color-primary-cyan);
   font-size: 0.85rem;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .position {
   color: var(--color-neutral-cyan-very-dark);
   font-size: 1.1rem;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 .position:hover {
   color: var(--color-primary-cyan);
@@ -28,6 +28,8 @@
 
 .details {
   color: var(--color-neutral-cyan-dark);
+  font-weight: 500;
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
 }
@@ -40,5 +42,4 @@
   height: 3px;
   background: var(--color-neutral-cyan-dark);
   margin: 0.25rem 0.5rem;
-  /* vertical-align: middle; */
 }

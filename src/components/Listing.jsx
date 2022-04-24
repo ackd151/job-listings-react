@@ -15,11 +15,11 @@ const Listing = ({ listing }) => {
   console.log(filterTags);
 
   return (
-    <div className={`listing ${listing.featured && "featured"}`}>
+    <div className={`listing shadowed ${listing.featured ? "featured" : ""}`}>
       <ListingInfo listing={listing} />
       <div className='tags'>
-        {filterTags.map((tag) => (
-          <FilterTag tag={tag} />
+        {filterTags.map((tag, idx) => (
+          <FilterTag key={idx} tag={tag} />
         ))}
       </div>
     </div>

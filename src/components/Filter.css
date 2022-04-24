@@ -1,0 +1,44 @@
+.filters {
+  display: flex;
+  gap: 1rem;
+}
+
+.filter {
+  background-color: var(--color-neutral-cyan-filter);
+  color: var(--color-primary-cyan);
+  border-radius: 0.3rem;
+  display: flex;
+}
+
+.filter-val {
+  padding: 0.4rem;
+}
+
+.filter-remove-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 100%;
+  padding: 0.5rem;
+  background-color: var(--color-primary-cyan);
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+.filter-remove-btn:hover {
+  background-color: var(--color-neutral-cyan-very-dark);
+  cursor: pointer;
+}
+
+.clear-btn {
+  background-color: transparent;
+  border: none;
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  color: var(--color-neutral-cyan-dark);
+}
+.clear-btn:hover {
+  color: var(--color-primary-cyan);
+  text-decoration: underline;
+  cursor: pointer;
+}

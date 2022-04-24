@@ -3,10 +3,12 @@
   background-color: var(--color-white);
   padding: 1.5rem;
   display: flex;
+  gap: 1rem;
   justify-content: space-between;
   align-items: center;
   border-left: 0.33rem solid transparent;
   border-radius: 0.33rem;
+  position: relative;
 }
 
 .featured {
@@ -15,8 +17,47 @@
 
 .tags {
   height: 100%;
+  max-width: 50%;
   display: flex;
   gap: 1rem;
   align-items: center;
   justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 900px) {
+  .tags {
+    max-width: 40%;
+  }
+}
+
+/* Stack at 700px */
+@media screen and (max-width: 700px) {
+  .listing {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .tags {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+  .tags::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: var(--color-neutral-cyan-very-dark);
+    display: inline-block;
+  }
+}
+
+/* Repositioned business-logo padding */
+@media screen and (max-width: 600px) {
+  .listing {
+    padding-top: 3rem;
+  }
+
+  .tags {
+    justify-content: flex-start;
+  }
 }
